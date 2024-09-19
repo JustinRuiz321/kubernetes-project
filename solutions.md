@@ -79,7 +79,7 @@ kubectl create secret docker-registry my-registry-key \
 --docker-email=$DOCKER_EMAIL
 
 
-# Again from k8s-deployment folder, execute following commands
+# Again from k8s-deployment folder, execute following commands - ensuring you have added your docker image details to line 22 of java-app.yaml
 kubectl apply -f db-secret.yaml
 kubectl apply -f db-config.yaml
 kubectl apply -f java-app.yaml
